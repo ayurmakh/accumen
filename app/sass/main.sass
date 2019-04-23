@@ -1,58 +1,63 @@
 @import "fonts"
+@import "vars"
+@import "base"
 
-html
-	font-family: sonus_light-accumen, sans-serif
+/* Cyan background */
+.cyan_background
+	width: 100%
+	height: 100%
+	background-color: $cyan
 
-.cyan-background
-	position: absolute
-	top: 0
-	bottom: 0
-	right: 0
-	left: 0
-	background-color: #a7cdd3
-	
-.content
-	margin-left: auto
-	margin-right: auto
-	height: auto
-	width: 68vw
+/* Container */
+.container
+	width: 1000px
+	z-index: 1000
 	background-color: #fff
-	border: solid 1px #82a7ad
+	margin: 0 auto
+	border: solid 1px $dart-cyan
 	border-top: none
 
-.main-header
-	padding-top: 45px
+/* Main header */ 
+.main_header
+	padding-top: 77px
 	text-transform: uppercase
 	padding-left: 40px
-	display: grid
-	grid-template-columns: repeat(4, 1fr)
+	align-items: center
+	display: flex
 
-.main-header-item 
-	&:nth-child(2)
-		grid-column: 2 / 5
+.main_header_logo
+	color: #2a3436
+	display: inline-block
+	font-size: 48px
+	font-weight: 500
 
-.site-name
-	h1
-		font-weight: normal
-		font-size: 48px
-		letter-spacing: 1px
-
-.menu
-	padding-left: 25px
-	padding-top: 30px 
+.main_header_nav
+	height: 100%
+	display: inline-block	
+	margin-left: 80px
 	font-size: 20px
-	ul
-		list-style-type: none
-	li
-		display: inline
-		padding-left: 30px
+	
 
-.focus
-	text-align: justify
-	display: inline
-	border: 1px solid #bfb5a4
-	width: 2000px
-	height: 100px
-	background-color: #f2ebde
-	li
-		padding-left: 10px
+.main_header_nav_item
+	text-decoration: none
+	color: #1c1c1c
+	margin-right: 35px
+	background-color: #fff
+	border: none
+	transition: background-color .2s linear, border .2s linear
+	padding: 5px
+	
+	&:hover
+		background-color: $light-yellow
+		border: solid 1px $yellow-border
+
+
+.main_header_nav_item.active
+	text-decoration: none
+	color: #1c1c1c
+	margin-right: 35px
+	background-color: $light-yellow
+	border: solid 1px $yellow-border
+	transition: background-color .2s linear, border .2s linear
+	padding: 5px
+	
