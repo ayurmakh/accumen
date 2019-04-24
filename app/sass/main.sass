@@ -5,7 +5,6 @@
 /* Cyan background */
 .cyan_background
 	width: 100%
-
 	background-color: $cyan
 
 /* Container */
@@ -39,6 +38,7 @@
 	
 
 .main_header_nav_item
+	font-weight: 100
 	text-decoration: none
 	color: #1c1c1c
 	margin-right: 35px
@@ -83,10 +83,6 @@
 	p
 		margin-bottom: 20px
 		font-weight: 500
-	a
-		color: $font-color
-		font-weight: 600
-		line-height: 3
 
 /* Second h2 */
 #second_h2
@@ -117,3 +113,35 @@
 .text_header
 	font-weight: 200
 	margin-bottom: 15px
+
+/* Main footer */
+.main_footer
+	background-color: $light-yellow
+	border-top: 1px solid $yellow-border
+	display: flex
+	padding-top: 40px
+	padding-bottom: 40px
+
+.footer_left
+	flex: 0 0 280px
+	padding-left: 40px
+
+.footer_right
+	margin-left: 60px
+	line-height: 1.7
+
+.border
+	position: relative
+	&:after
+		content: ""
+		width: 240px
+		height: 1px
+		background-color: $yellow-border
+		position: absolute
+		top: 30px
+		left: 0
+
+.titr
+	margin: 0 auto
+	width: 280px
+	padding: 60px 0 60px 60px
